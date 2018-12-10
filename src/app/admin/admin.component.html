@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-12" style="min-height: 400px">
+   <table class="table">
+      <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Address</th>
+            <th scope="col">Company Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Consent</th>
+            <th scope="col">Verify</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let consent of consentsCollection; let i=index">
+                <th scope="row">{{i}}</th>
+                <td>{{consent.address}}</td>
+                <td>{{consent.company_name}}</td>
+                <td>{{consent.email}}</td>
+                <td>{{consent.mobile_number}}</td>              
+                <td>{{consent.consent}}</td>              
+                <td>{{consent.verify}}</td>              
+              </tr>
+        </tbody>
+   </table>
+  </div>
+</div>

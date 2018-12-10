@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-md-12">
+      <form [formGroup]="consentVerifyForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-md-12">
+            <p><i>verification code SMS to {{mobile_number}}</i></p>
+            <div class="form-group">
+              <label for="name">OTP Code</label>
+              <input type="text" id="otp_code" name="otp_code" class="form-control" formControlName="otp_code">
+            </div>           
+            <div class="form-group">
+              <button class="btn btn-success btn-sm" type="submit">Verify</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
